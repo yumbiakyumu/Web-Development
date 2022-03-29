@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Vaccination</title>
+</head>
+<body>
+    <section class="showcase active">
+        <header>
+          <h2 class="logo">WWH</h2>
+          <div class="toggle actives"></div>
+        </header>
+        <video src="../images/pexels.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>Kick diseases </h2> 
+          <h3>Out The World</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <a href="#">Book an appointment</a>
+        </div>
+        <ul class="social">
+          <li><a href="#"><img src="../images/facebook.png"></a></li>
+          <li><a href="#"><img src="../images/twitter.png"></a></li>
+          <li><a href="#"><img src="../images/instagram.png"></a></li>
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <script>
+        const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+      </script>
+    
+</body>
+</html>
